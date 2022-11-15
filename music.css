@@ -15,6 +15,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     min-height: 100vh;
     background-color: antiquewhite;
 }
@@ -34,7 +35,7 @@ ion-icon{
     box-shadow:  20px 20px 60px #bebebe,
              -20px -20px 60px #ffffff;
 }
-.topBar, .songProgress .trackTimer ul li{
+.topBar, .songProgress .trackTimer, .actionButtons, ul li{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -72,7 +73,8 @@ ion-icon{
     font-size: larger;
 }
 .songDetails p{
-    color: #ffffff;
+    color: #000000af;
+    font-weight: bolder;
 }
 .songDetails .songTitle{
  font-size: 21px;
@@ -94,5 +96,49 @@ ion-icon{
     height: inherit;
     width: 0%;
     position: relative;
+    border-radius: inherit;
+    background: whitesmoke;
 }
+.progressBar::before{
+    content: "";
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    top: 50%;
+    right: -5px;
+    z-index: 2;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-50%);
+    background: inherit;
+    transition: opacity 0.2s ease;
+}
+.songProgress:hover .progressBar::before{
+    opacity: 1;
+    pointer-events: auto;
+}
+.songProgress .trackTimer{
+    margin-top: 2px;
+}
+.trackTimer span{
+    font-size: 15px;
+    color: aliceblue;
+    margin-top: 5px;
+}
+.actionButtons{
+    margin: 70px 0 5px 0;
+}
+.actionButtons ion-icon{
+   user-select: none;
+   color: aliceblue;
+   background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+.actionButtons ion-icon:nth-child(2){
+    
+    
+ }
+
    
