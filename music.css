@@ -19,8 +19,9 @@ body{
     background-color: antiquewhite;
 }
 ion-icon{
-    font-size: 24px;
+    font-size: 32px;
     cursor: pointer;
+    
 }
 .container{
     width: 350px;
@@ -32,4 +33,36 @@ ion-icon{
     background-image: linear-gradient(40deg, #4158D0 10%, #ec67d3 39%, #e4e457 76%);
     box-shadow:  20px 20px 60px #bebebe,
              -20px -20px 60px #ffffff;
+}
+.topBar, .songProgress .trackTimer ul li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.topBar > ion-icon{
+    color: white;
+    font-weight: bold;
+}
+.topBar > ion-icon:first-child{
+    margin-left: -7px;
+    font-size: 26px;
+}
+.topBar > span{
+    font-size: 20px;
+    margin-left: -3px;
+    color: #ffffff;
+}
+.imageBox{
+    width: 100%;
+    height: 280px;
+    margin-top: 25px;
+    border-radius: 50%;
+    box-shadow:  -26px 26px 71px #968d8d,
+             26px -26px 71px #73737367;
+}
+.imageBox img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
