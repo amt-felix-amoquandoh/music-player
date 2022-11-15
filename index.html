@@ -14,6 +14,41 @@
   </head>
   <body>
     <!-- Project starts here-->
+    <div class="container">
+      <div class="topBar">
+        <ion-icon name="heart-outline"></ion-icon>
+        <span>Now playing</span>
+        <ion-icon name="add-outline"></ion-icon>
+      </div>
+
+      <div class="imageBox">
+        <img src="" alt="" />
+      </div>
+
+      <div class="songDetails">
+        <p class="songTitle"></p>
+        <p class="artist-e"></p>
+      </div>
+
+      <div class="songProgress">
+        <div class="progressBar">
+          <audio id="mainSong" src=""></audio>
+        </div>
+        <div class="trackTimer">
+          <span class="currentTime">0:00</span>
+          <span class="fullDuration">0:00</span>
+        </div>
+      </div>
+
+      <div class="actionButtons">
+        <ion-icon
+          id="repeatSong"
+          class=""
+          title="playlist looped"
+          name="repeat-outline"
+        ></ion-icon>
+      </div>
+    </div>
 
     <!-- Project ends here-->
 
