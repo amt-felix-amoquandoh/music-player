@@ -66,3 +66,33 @@ ion-icon{
     height: 100%;
     object-fit: cover;
 }
+.songDetails{
+    text-align: center;
+    margin: 15px 0;
+    font-size: larger;
+}
+.songDetails p{
+    color: #ffffff;
+}
+.songDetails .songTitle{
+ font-size: 21px;
+ margin-bottom: 8px;
+}
+.songDetails .artist-e{
+    font-size: 18px;
+    opacity: 0.9;
+    line-height: 35px;
+   }
+.songProgress{
+    height: 6px;
+    width: 100%;
+    border-radius: 50px;
+    background: crimson;
+    cursor: pointer;
+}
+.songProgress .progressBar{
+    height: inherit;
+    width: 0%;
+    position: relative;
+}
+   
