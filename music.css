@@ -67,7 +67,7 @@ ion-icon{
     height: 280px;
     margin-top: 25px;
     border-radius: 50%;
-    box-shadow:  -26px 26px 71px #968d8d,
+    box-shadow:  -26px 26px 71px #968d8d5b,
              26px -26px 71px #73737367;
 }
 .imageBox img{
@@ -179,6 +179,7 @@ ion-icon{
     border-radius: inherit;
  }
  .previous, .next{
+    background-image: url("");
     align-items: center;
     border-radius: 50%;
     padding: 8px;
