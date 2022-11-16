@@ -5,6 +5,8 @@ artists = playerBox.querySelector(".songDetails .artist-e"),
 song = playerBox.querySelector("#activeSong"),
 playBtn = playerBox.querySelector(".listen .play"),
 pauseBtn = playerBox.querySelector(".listen .pause"),
+nextBtn = playerBox.querySelector("#nextSong"),
+previousBtn = playerBox.querySelector("#prevSong"),
 navigateSong = playerBox.querySelector(".listen");
 
 let musicIndex = 1;
@@ -36,7 +38,18 @@ function pauseSong (){
     song.pause();
 }
 
+function nextSong(){
+
+}
+
+function previousSong(){
+    
+}
+
 navigateSong.addEventListener("click", () => {
     const isMusicPaused = playerBox.classList.contains("paused");
     isMusicPaused ? pauseSong() : playSong();
 }) 
+
+nextBtn.addEventListener("click", nextSong);
+previousBtn.addEventListener("click", previousSong);
