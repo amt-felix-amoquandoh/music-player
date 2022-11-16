@@ -24,6 +24,14 @@ ion-icon{
     cursor: pointer;
     
 }
+.heading{
+    color: crimson;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
 .container{
     width: 350px;
     height: 650px;
