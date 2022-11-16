@@ -1,7 +1,7 @@
 let musicFolder = [
     {
         name: "-Oyi-",
-        artist:"2Baba-ft-HI-Idibia-(JustNaija.com)",
+        artist:"2Baba-ft-HI-Idibia",
         image: "./images/2baba.png",
         source: "./songs/2Baba-Oyi-ft-HI-Idibia-\(JustNaija.com\).mp3"
     },
@@ -54,45 +54,39 @@ let musicFolder = [
         source: "./songs/Stonebwoy-Sobolo-www.Ghanasongs.com_.mp3"
     },
     {
-        name: "-Oyi-",
-        artist:"2Baba-ft-HI-Idibia-(JustNaija.com)",
-        image: "./images/2baba.png",
-        source: "./songs/2Baba-Oyi-ft-HI-Idibia-\(JustNaija.com\).mp3"
+        name: "Pana",
+        artist:"Tekno",
+        image: "./images/kizzD.png",
+        source: "./songs/Tekno-Pana-\(JustNaija.com\).mp3"
     },
     {
-        name: "-Oyi-",
-        artist:"2Baba-ft-HI-Idibia-(JustNaija.com)",
+        name: "_Malo_",
+        artist:"Tiwa_Savage_ft_Wizkid",
         image: "./images/2baba.png",
-        source: "./songs/2Baba-Oyi-ft-HI-Idibia-\(JustNaija.com\).mp3"
+        source: "./songs/Tiwa_Savage_-_Malo_ft_Wizkid-tooXclusive_.mp3"
     },
     {
-        name: "-Oyi-",
-        artist:"2Baba-ft-HI-Idibia-(JustNaija.com)",
-        image: "./images/2baba.png",
-        source: "./songs/2Baba-Oyi-ft-HI-Idibia-\(JustNaija.com\).mp3"
+        name: "-My-Life-Remix-",
+        artist:"-Trigmaticft.-M-anifest-Worlasi-A.I",
+        image: "./images/music2.jpg",
+        source: "./songs/Trigmatic-My-Life-Remix-ft.-M-anifest-Worlasi-A.I-www.Ghanasongs.com_.mp3"
     },
     {
-        name: "-Oyi-",
-        artist:"2Baba-ft-HI-Idibia-(JustNaija.com)",
-        image: "./images/2baba.png",
-        source: "./songs/2Baba-Oyi-ft-HI-Idibia-\(JustNaija.com\).mp3"
+        name: "Manya",
+        artist:"Wizkid-",
+        image: "./images/trendy.png",
+        source: "./songs/Wizkid-Manya.mp3"
     },
     {
-        name: "-Oyi-",
-        artist:"2Baba-ft-HI-Idibia-(JustNaija.com)",
-        image: "./images/2baba.png",
-        source: "./songs/2Baba-Oyi-ft-HI-Idibia-\(JustNaija.com\).mp3"
+        name: "Too-Naughty",
+        artist:"Worlasi",
+        image: "./images/ghsongs.png",
+        source: "./songs/Worlasi-Too-Naughty-Prod.-By-Maxi-www.Ghanasongs.com_.mp3"
     },
     {
-        name: "-Oyi-",
-        artist:"2Baba-ft-HI-Idibia-(JustNaija.com)",
-        image: "./images/2baba.png",
-        source: "./songs/2Baba-Oyi-ft-HI-Idibia-\(JustNaija.com\).mp3"
-    },
-    {
-        name: "-Oyi-",
-        artist:"2Baba-ft-HI-Idibia-(JustNaija.com)",
-        image: "./images/2baba.png",
+        name: "Brôwn-Skin-Girls-",
+        artist:"-Wzkid-Ft.-Béyonce",
+        image: "./images/trendy.png",
         source: "./songs/2Baba-Oyi-ft-HI-Idibia-\(JustNaija.com\).mp3"
     }
 
