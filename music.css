@@ -196,6 +196,21 @@ ion-icon{
     background-blend-mode: screen;
     background: linear-gradient(0deg, #b591b9 0%, #eb9080 100%);
  }
+ .musicList ul{
+    margin-top: 10px 0;
+    max-height: 260px;
+    overflow: auto;
+ }
+ .musicList ul li{
+    list-style: none;
+    display: flex;
+    cursor: pointer;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    color: black;
+    line-height: 22px;
+    border-bottom: 1px solid darkolivegreen;
+ }
  .listHeader .row{
     display: flex;
     align-items: center;
