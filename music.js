@@ -2,7 +2,9 @@ const playerBox = document.querySelector(".container"),
 trackImage = playerBox.querySelector(".imageBox img"),
 musicTitle = playerBox.querySelector(".songDetails .songTitle"),
 artists = playerBox.querySelector(".songDetails .artist-e"),
-song = playerBox.querySelector(".activeSong"),
+song = playerBox.querySelector("#activeSong"),
+playBtn = playerBox.querySelector(".listen .play"),
+pauseBtn = playerBox.querySelector(".listen .pause"),
 navigateSong = playerBox.querySelector(".listen");
 
 let musicIndex = 1;
@@ -17,3 +19,24 @@ function loadSongs(indexNumber){
     trackImage.src = `./images/${musicFolder[indexNumber - 1].image}.png`;
     song.src = `./songs/${musicFolder[indexNumber - 1].source}.mp3`;
 }
+
+function playSong (){
+    playerBox.classList.add("paused");
+    playBtn.classList.add("hideBtn");
+    pauseBtn.classList.remove("pause");
+    pauseBtn.classList.add("showBtn");
+    song.play();
+}
+
+function pauseSong (){
+    playerBox.classList.add("paused");
+    pauseBtn.classList.add("pause");
+    playBtn.classList.remove("hideBtn")
+    playBtn.classList.add("showBtn");
+    song.pause();
+}
+
+navigateSong.addEventListener("click", () => {
+    const isMusicPaused = playerBox.classList.contains("paused");
+    isMusicPaused ? pauseSong() : playSong();
+}) 

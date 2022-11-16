@@ -3,91 +3,91 @@ let musicFolder = [
         name: "-Oyi-",
         artist:"2Baba-ft-HI-Idibia",
         image: "2baba",
-        source: "2Baba-Oyi-ft-HI-Idibia-\(JustNaija.com\)"
+        source: "Oyi"
     },
     {
         name: "Fake Love ",
         artist:"Duncan Mighty ft Wizkid",
         image: "fakelove",
-        source: "Duncan\ Mighty\ –\ Fake\ Love\ ft\ Wizkid"
+        source: "FakeLove"
     },
     {
         name: "Bad",
         artist:"Kiss_Daniel",
         image: "kizzD",
-        source: "Kizz-Daniel-Bad-feat-Wretch-32-\(JustNaija.com\)"
+        source: "Bad"
     },
     {
         name: "Dzo",
         artist:"Ko-Jo-Cue feat Worlasi",
         image: "ghsongs",
-        source: "Ko-Jo-Cue-Dzo-feat-Worlasi-\(JustNaija.com\)"
+        source: "Dzo"
     },
     {
         name: "Human_Being_",
         artist:"MI_Abaga_Feat_2_Face_Sound_Sultan",
         image: "trendy",
-        source: "MI_Abaga_Human_Being_Feat_2_Face_Sound_Sultan"
+        source: "HumanBeing"
     },
     {
         name: "Love-Anthem",
-        artist:"Obrafour-ft.-Trigmatic-x-A.I-–-",
+        artist:"Obrafour-ft.-Trigmatic-x-A.I",
         image: "ghsongs",
-        source: "Obrafour-ft.-Trigmatic-x-A.I-–-Love-Anthem-Prod.by-JMJ-www.Ghanasongs.com_"
+        source: "Anthem"
     },
     {
         name: "By-You-",
         artist:"-Simi--ft-Adekunle-Gold",
         image: "trendy",
-        source: "Simi-By-You-ft-Adekunle-Gold-\(TrendyBeatz.com\)"
+        source: "ByYou"
     },
     {
         name: "Simi-Doyin-ft-Mr-Eazi",
         artist:"2Baba-ft-HI-Idibia-(JustNaija.com)",
         image: "fakelove",
-        source: "Simi-Doyin-ft-Mr-Eazi"
+        source: "Doyin"
     },
     {
         name: "-Sobolo-",
         artist:"-Stonebwoy",
         image: "ghsongs",
-        source: "Stonebwoy-Sobolo-www.Ghanasongs.com_"
+        source: "Sobolo"
     },
     {
         name: "Pana",
         artist:"Tekno",
         image: "kizzD",
-        source: "Tekno-Pana-\(JustNaija.com\)"
+        source: "Pana"
     },
     {
         name: "_Malo_",
         artist:"Tiwa_Savage_ft_Wizkid",
         image: "trendy",
-        source: "Tiwa_Savage_-_Malo_ft_Wizkid-tooXclusive_"
+        source: "Malo"
     },
     {
         name: "-My-Life-Remix-",
         artist:"-Trigmaticft.-M-anifest-Worlasi-A.I",
         image: "ghsongs",
-        source: "Trigmatic-My-Life-Remix-ft.-M-anifest-Worlasi-A.I-www.Ghanasongs.com_"
+        source: "MyLifeRemix"
     },
     {
         name: "Manya",
         artist:"Wizkid-",
         image: "trendy",
-        source: "Wizkid-Manya"
+        source: "WizkidManya"
     },
     {
         name: "Too-Naughty",
         artist:"Worlasi",
         image: "ghsongs",
-        source: "Worlasi-Too-Naughty-Prod.-By-Maxi-www.Ghanasongs.com_"
+        source: "TooNaughty"
     },
     {
         name: "Brôwn-Skin-Girls-",
         artist:"-Wzkid-Ft.-Béyonce",
         image: "trendy",
-        source: "2Baba-Oyi-ft-HI-Idibia-\(JustNaija.com\)"
+        source: "brown"
     }
 
 ]
