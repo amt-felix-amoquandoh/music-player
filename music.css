@@ -43,7 +43,7 @@ ion-icon{
     box-shadow:  20px 20px 60px #bebebe,
              -20px -20px 60px #ffffff;
 }
-.topBar, .songProgress .trackTimer, .actionButtons, ul li{
+.topBar, .songProgress .trackTimer, .actionButtons, .musicList .listHeader, .musicList ul li{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -193,5 +193,23 @@ ion-icon{
     z-index: 5;
     padding: 15px 30px;
     border-radius: 15px;
+    background-blend-mode: screen;
+    background: linear-gradient(0deg, #b591b9 0%, #eb9080 100%);
+ }
+ .listHeader .row{
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+    color: #3b3b3b;
+ }
+ .listHeader .row ion-icon{
+    cursor: default;
+ }
+ .listHeader .row span{
+    margin-left: 5px;
+ }
+ .listHeader .row #close{
+    font-size: 22px;
+    color: #3b3b3b;
  }
    
