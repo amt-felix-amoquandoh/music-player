@@ -39,11 +39,17 @@ function pauseSong (){
 }
 
 function nextSong(){
-
+  musicIndex++;
+  musicIndex > musicFolder.length ? musicIndex = 1 : musicIndex = musicIndex;
+  loadSongs(musicIndex);
+  playSong();
 }
 
 function previousSong(){
-    
+    musicIndex--;
+    musicIndex < 1 ? musicIndex = musicFolder.length : musicIndex = musicIndex;
+    loadSongs(musicIndex);
+    playSong();
 }
 
 navigateSong.addEventListener("click", () => {
