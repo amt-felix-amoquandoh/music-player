@@ -9,6 +9,7 @@ nextBtn = playerBox.querySelector("#nextSong"),
 previousBtn = playerBox.querySelector("#prevSong"),
 progressBox = playerBox.querySelector(".songProgress"),
 songProgress = playerBox.querySelector(".progressBar"),
+repeatSong = playerBox.querySelector(".repeatSong"),
 navigateSong = playerBox.querySelector(".listen");
 
 let musicIndex = 1;
@@ -24,7 +25,7 @@ function loadSongs(indexNumber){
     song.src = `./songs/${musicFolder[indexNumber - 1].source}.mp3`;
 }
 
-function playSong (){
+function playSongs (){
     playerBox.classList.add("paused");
     playBtn.classList.add("hideBtn");
     pauseBtn.classList.remove("pause");
@@ -44,19 +45,19 @@ function nextSong(){
   musicIndex++;
   musicIndex > musicFolder.length ? musicIndex = 1 : musicIndex = musicIndex;
   loadSongs(musicIndex);
-  playSong();
+  playSongs();
 }
 
 function previousSong(){
     musicIndex--;
     musicIndex < 1 ? musicIndex = musicFolder.length : musicIndex = musicIndex;
     loadSongs(musicIndex);
-    playSong();
+    playSongs();
 }
 
 function seekSong (){
     const isMusicPaused = playerBox.classList.contains("paused");
-    isMusicPaused ? pauseSong() : playSong();
+    isMusicPaused ? pauseSong() : playSongs();
 }
 
 function songTime (e){
@@ -90,16 +91,19 @@ function songTime (e){
      activeMusicTime.innerText = `${currentMinutes}:${currentSeconds}`;
  }
 
+ function progressBar (e){
+    let progressWidth = progressBox.clientWidth;
+    let offsetXclicked = e.offsetX;
+    let activeDuration = song.duration;
+
+    song.currentTime = (offsetXclicked / progressWidth) * activeDuration;
+    playSongs();
+}
+
 
 navigateSong.addEventListener("click", seekSong);
 nextBtn.addEventListener("click", nextSong);
 previousBtn.addEventListener("click", previousSong);
 song.addEventListener("timeupdate", songTime);
-progressBox.addEventListener("click", (e) => {
-    let progressWidth = progressBox.clientWidth;
-    let offsetXclicked = e.OffsetX;
-    let activeDuration = song.duration;
-
-    
-})
+progressBox.addEventListener("click", progressBar)
 
