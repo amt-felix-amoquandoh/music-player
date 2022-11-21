@@ -7,6 +7,7 @@ playBtn = playerBox.querySelector(".listen .play"),
 pauseBtn = playerBox.querySelector(".listen .pause"),
 nextBtn = playerBox.querySelector("#nextSong"),
 previousBtn = playerBox.querySelector("#prevSong"),
+duration = playerBox.querySelector(".progressBar"),
 navigateSong = playerBox.querySelector(".listen");
 
 let musicIndex = 1;
