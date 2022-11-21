@@ -53,10 +53,16 @@ function previousSong(){
     playSong();
 }
 
-navigateSong.addEventListener("click", () => {
+function seekSong (){
     const isMusicPaused = playerBox.classList.contains("paused");
     isMusicPaused ? pauseSong() : playSong();
-}) 
+}
 
+function songProgress(){
+    
+}
+
+navigateSong.addEventListener("click", seekSong);
 nextBtn.addEventListener("click", nextSong);
 previousBtn.addEventListener("click", previousSong);
+song.addEventListener("timeupdate", songProgress);
