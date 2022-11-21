@@ -9,7 +9,7 @@ nextBtn = playerBox.querySelector("#nextSong"),
 previousBtn = playerBox.querySelector("#prevSong"),
 progressBox = playerBox.querySelector(".songProgress"),
 songProgress = playerBox.querySelector(".progressBar"),
-repeatButton = playerBox.querySelector(".repeatSong"),
+repeatButton = playerBox.querySelector("#repeatSong"),
 navigateSong = playerBox.querySelector(".listen");
 
 let musicIndex = 1;
@@ -27,17 +27,13 @@ function loadSongs(indexNumber){
 
 function playSongs (){
     playerBox.classList.add("paused");
-    playBtn.classList.add("hideBtn");
-    pauseBtn.classList.remove("pause");
-    pauseBtn.classList.add("showBtn");
+    playBtn.setAttribute("name", "pause-outline")
     song.play();
 }
 
 function pauseSong (){
     playerBox.classList.add("paused");
-    pauseBtn.classList.add("pause");
-    playBtn.classList.remove("hideBtn")
-    playBtn.classList.add("showBtn");
+    playBtn.setAttribute("name", "play")
     song.pause();
 }
 
@@ -108,6 +104,6 @@ song.addEventListener("timeupdate", songTime);
 progressBox.addEventListener("click", progressBar)
 repeatButton.addEventListener("click", () => {
     let getRepeatText = repeatButton.innerText;
-    
+
 })
 
