@@ -67,4 +67,11 @@ song.addEventListener("timeupdate", (e) => {
     const duration = e.target.duration;
     let progress = (currentTime / duration) * 100;
     songProgress.style.width = `${progress}%`;
+
+    //updating total song duration
+    let aciveMusicTime = container.querySelector(".currentTime"),
+    activeMusicDuration = container.querySelector("fullDuration");
+    song.addEventListener("loadeddata", () => {
+        
+    })
  });
