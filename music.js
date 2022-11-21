@@ -7,6 +7,7 @@ playBtn = playerBox.querySelector(".listen .play"),
 pauseBtn = playerBox.querySelector(".listen .pause"),
 nextBtn = playerBox.querySelector("#nextSong"),
 previousBtn = playerBox.querySelector("#prevSong"),
+progressBox = playerBox.querySelector(".songProgress"),
 songProgress = playerBox.querySelector(".progressBar"),
 navigateSong = playerBox.querySelector(".listen");
 
@@ -58,11 +59,7 @@ function seekSong (){
     isMusicPaused ? pauseSong() : playSong();
 }
 
-
-navigateSong.addEventListener("click", seekSong);
-nextBtn.addEventListener("click", nextSong);
-previousBtn.addEventListener("click", previousSong);
-song.addEventListener("timeupdate", (e) => {
+function songTime (e){
     const currentTime = e.target.currentTime;
     const duration = e.target.duration;
     let progress = (currentTime / duration) * 100;
@@ -91,7 +88,18 @@ song.addEventListener("timeupdate", (e) => {
      }
 
      activeMusicTime.innerText = `${currentMinutes}:${currentSeconds}`;
+ }
 
 
+navigateSong.addEventListener("click", seekSong);
+nextBtn.addEventListener("click", nextSong);
+previousBtn.addEventListener("click", previousSong);
+song.addEventListener("timeupdate", songTime);
+progressBox.addEventListener("click", (e) => {
+    let progressWidth = progressBox.clientWidth;
+    let offsetXclicked = e.OffsetX;
+    let activeDuration = song.duration;
 
- });
+    
+})
+
