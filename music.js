@@ -103,7 +103,7 @@ previousBtn.addEventListener("click", previousSong);
 song.addEventListener("timeupdate", songTime);
 progressBox.addEventListener("click", progressBar)
 repeatButton.addEventListener("click", () => {
-    let getRepeatText = repeatButton.innerText;
-
+    let getRepeatText = repeatButton.classList;
+    console.log(getRepeatText)
 })
 
