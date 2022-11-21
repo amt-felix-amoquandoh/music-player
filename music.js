@@ -9,7 +9,7 @@ nextBtn = playerBox.querySelector("#nextSong"),
 previousBtn = playerBox.querySelector("#prevSong"),
 progressBox = playerBox.querySelector(".songProgress"),
 songProgress = playerBox.querySelector(".progressBar"),
-repeatSong = playerBox.querySelector(".repeatSong"),
+repeatButton = playerBox.querySelector(".repeatSong"),
 navigateSong = playerBox.querySelector(".listen");
 
 let musicIndex = 1;
@@ -106,4 +106,8 @@ nextBtn.addEventListener("click", nextSong);
 previousBtn.addEventListener("click", previousSong);
 song.addEventListener("timeupdate", songTime);
 progressBox.addEventListener("click", progressBar)
+repeatButton.addEventListener("click", () => {
+    let getRepeatText = repeatButton.innerText;
+    
+})
 
