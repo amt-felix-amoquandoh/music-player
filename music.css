@@ -19,10 +19,9 @@ body{
     min-height: 100vh;
     background-color: antiquewhite;
 }
-ion-icon{
+ion-icon, i{
     font-size: 32px;
-    cursor: pointer;
-    
+    cursor: pointer;    
 }
 .heading{
     color: crimson;
