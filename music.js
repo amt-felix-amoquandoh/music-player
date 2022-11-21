@@ -72,6 +72,8 @@ song.addEventListener("timeupdate", (e) => {
     let aciveMusicTime = container.querySelector(".currentTime"),
     activeMusicDuration = container.querySelector("fullDuration");
     song.addEventListener("loadeddata", () => {
-        
+     let activeDuration = song.duration;
+     let totalMinutes = Math.floor(activeDuration / 60);
+     let totalSeconds = Math.floor(activeDuration / 60);
     })
  });
