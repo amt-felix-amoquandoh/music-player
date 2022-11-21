@@ -69,17 +69,29 @@ song.addEventListener("timeupdate", (e) => {
     songProgress.style.width = `${progress}%`;
 
     //updating total song duration
-    let aciveMusicTime = playerBox.querySelector(".currentTime"),
-    activeMusicDuration = playerBox.querySelector("fullDuration");
+    let activeMusicTime = playerBox.querySelector(".currentTime"),
+    activeMusicDuration = playerBox.querySelector(".fullDuration");
     song.addEventListener("loadeddata", () => {
      let activeDuration = song.duration;
      let totalMinutes = Math.floor(activeDuration / 60);
      let totalSeconds = Math.floor(activeDuration % 60);
 
      if (totalSeconds > 10) {
-        totalSeconds = `0${totalSeconds}`;
+        totalSeconds = `${totalSeconds}`;
      }
 
      activeMusicDuration.innerText = `${totalMinutes}:${totalSeconds}`;
-    })
+    });
+    let currentDuration = song.duration;
+    let currentMinutes = Math.floor(currentTime / 60);
+     let currentSeconds = Math.floor(currentTime % 60);
+
+     if (currentSeconds > 10) {
+        currentSeconds = `${currentSeconds}`;
+     }
+
+     activeMusicTime.innerText = `${currentMinutes}:${currentSeconds}`;
+
+
+
  });
