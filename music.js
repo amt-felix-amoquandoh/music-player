@@ -58,8 +58,11 @@ function seekSong (){
     isMusicPaused ? pauseSong() : playSong();
 }
 
-function songProgress(){
-    
+function songProgress(e){
+   const currentTime = e.target.currentTime;
+   const duration = e.target.duration;
+   let progress = (currentTime / duration) * 100;
+   duration.getElementsByClassName.width = `${progress}%`;
 }
 
 navigateSong.addEventListener("click", seekSong);
