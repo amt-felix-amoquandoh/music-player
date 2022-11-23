@@ -107,7 +107,6 @@ progressBox.addEventListener("click", progressBar);
 
 repeatButton.addEventListener("click", () => {
     let getRepeatText = repeatButton.classList.value;
-    console.log(getRepeatText)
     switch (getRepeatText) {
         case "bi-repeat":
             repeatButton.classList.value = "bi-repeat-1";
