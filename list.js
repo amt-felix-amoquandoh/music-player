@@ -88,6 +88,42 @@ let musicFolder = [
         artist:"-Wzkid-Ft.-Béyonce",
         image: "trendy",
         source: "brown"
+    },
+    {
+        name: "Rambo",
+        artist:"Dr.-Dolor-x-Teni",
+        image: "teni",
+        source: "Rambo"
+    },
+    {
+        name: "Fvck_You_",
+        artist:"Kiss_Daniel",
+        image: "kizzD",
+        source: "FvckYou"
+    },
+    {
+        name: "Know-You",
+        artist:"Ladipoe-feat-Simi",
+        image: "fakelove",
+        source: "KnowYou"
+    },
+    {
+        name: "Iworiwo",
+        artist:"Larry-Gaagafeat-2Baba-",
+        image: "2baba",
+        source: "Iworiwo"
+    },
+    {
+        name: "Original-Baby",
+        artist:"Simi ft 2Baba",
+        image: "trendy",
+        source: "Original-Baby"
+    },
+    {
+        name: "Jogodo",
+        artist:"Teckno",
+        image: "teni",
+        source: "Jogodo"
     }
 
 ]

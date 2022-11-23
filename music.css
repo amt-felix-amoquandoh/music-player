@@ -31,6 +31,9 @@ ion-icon, .actionButtons i{
     justify-content: center;
     margin-bottom: 25px;
 }
+.heading > ion-icon{
+   color: black;
+}
 .container{
     overflow: hidden;
     width: 350px;
@@ -39,7 +42,7 @@ ion-icon, .actionButtons i{
     position: relative;
     border-radius: 15px;
     background-color: #4158D0;
-    background-image: linear-gradient(40deg, #4158D0 10%, #ec67d3 39%, #e4e457 76%);
+    background-image: linear-gradient(40deg, teal 10%,  rgba(255, 217, 0, 0.89) 76%);
     box-shadow:  20px 20px 60px #bebebe,
              -20px -20px 60px #ffffff;
 }
@@ -204,6 +207,12 @@ ion-icon, .actionButtons i{
     opacity: 1;
     pointer-events: auto;
  }
+ #closeList{
+  color: crimson;
+ }
+ #closeList:hover{
+   color: white;
+  }
  .musicList ul{
     margin-top: 10px 0;
     max-height: 260px;
@@ -230,6 +239,9 @@ ion-icon, .actionButtons i{
  }
  ul li .trackDuration{
     font-size: 16px;
+ }
+ .listHeader{
+   margin-bottom: 10px;
  }
  .listHeader .row{
     display: flex;
