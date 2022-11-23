@@ -156,6 +156,19 @@ function hidePlayList(){
     moreSongsBtn.click();
 }
 
+const musicUl = playerBox.querySelector("ul");
+for (let i = 0; i < musicFolder.length; i++) {    
+    musicUl = musicFolder[index];
+    let musicLi = `<li>
+    <div class="row">
+      <span>Oyi</span>
+      <p>2Baba--ft-HI-Idibia</p>
+    </div>
+    <span class="trackDuration">2:55</span>
+  </li>`    
+  musicUl.insertAdjacentHTML("beforeend", musicLi);
+}
+
 navigateSong.addEventListener("click", seekSong);
 nextBtn.addEventListener("click", nextSong);
 previousBtn.addEventListener("click", previousSong);
