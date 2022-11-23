@@ -182,15 +182,7 @@ ion-icon, .actionButtons i{
     border-radius: 50%;
     padding: 8px;
  }
- .listen .pause{
-   display: none;
- }
- .showBtn{
-    display: block;
- }
- .hideBtn{
-    display: none;
- }
+
  .musicList{
     opacity: 0;
     pointer-events: none;
