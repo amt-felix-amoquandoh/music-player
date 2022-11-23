@@ -25,18 +25,21 @@ function loadSongs(indexNumber){
     song.src = `./songs/${musicFolder[indexNumber - 1].source}.mp3`;
 }
 
+// play song function
 function playSongs (){
     playerBox.classList.add("paused");
     playBtn.setAttribute("name", "pause-outline")
     song.play();
 }
 
+// pause song function
 function pauseSong (){
     playerBox.classList.add("paused");
     playBtn.setAttribute("name", "play")
     song.pause();
 }
 
+// next song function
 function nextSong(){
   musicIndex++;
   musicIndex > musicFolder.length ? musicIndex = 1 : musicIndex = musicIndex;
@@ -44,12 +47,14 @@ function nextSong(){
   playSongs();
 }
 
+// previous song function
 function previousSong(){
     musicIndex--;
     musicIndex < 1 ? musicIndex = musicFolder.length : musicIndex = musicIndex;
     loadSongs(musicIndex);
     playSongs();
 }
+
 
 function seekSong (){
     const isMusicPaused = playerBox.classList.contains("paused");
@@ -96,25 +101,33 @@ function songTime (e){
     playSongs();
 }
 
+function repeatFunc (){
+    let getRepeatText = repeatButton.classList.value;
+    switch (getRepeatText) {
+        case "bi-repeat":
+            repeatButton.classList.value = "bi-repeat-1";
+            repeatButton.setAttribute("title", "song looped");            
+            break;
+            case "bi-repeat-1":
+            repeatButton.classList.value = "bi-shuffle";
+            repeatButton.setAttribute("title", "playback shuffled");            
+            break;
+            case "bi-shuffle":
+            repeatButton.classList.value = "bi-repeat";
+            repeatButton.setAttribute("title", "playback shuffled");            
+            break;
+            
+    
+        default:
+            break;
+    }
+}
+
 
 navigateSong.addEventListener("click", seekSong);
 nextBtn.addEventListener("click", nextSong);
 previousBtn.addEventListener("click", previousSong);
 song.addEventListener("timeupdate", songTime);
 progressBox.addEventListener("click", progressBar);
-
-
-
-repeatButton.addEventListener("click", () => {
-    let getRepeatText = repeatButton.classList.value;
-    switch (getRepeatText) {
-        case "bi-repeat":
-            repeatButton.classList.value = "bi-repeat-1";
-            repeatButton.setAttribute("title", "playlist looped");            
-            break;
-    
-        default:
-            break;
-    }
-})
+repeatButton.addEventListener("click", repeatFunc);
 
