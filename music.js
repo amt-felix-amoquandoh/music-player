@@ -10,6 +10,8 @@ previousBtn = playerBox.querySelector("#prevSong"),
 progressBox = playerBox.querySelector(".songProgress"),
 songProgress = playerBox.querySelector(".progressBar"),
 repeatButton = playerBox.querySelector("#repeatSong"),
+songsList = playerBox.querySelector(".musicList"),
+moreSongs = playerBox.querySelector("#moreSongs"),
 navigateSong = playerBox.querySelector(".listen");
 
 let musicIndex = 1;
@@ -148,13 +150,9 @@ song.addEventListener("ended", () => {
             do {
                 randonSongIndex = Math.floor((Math.random() * musicFolder.length) + 1);
             } while (musicIndex == randonSongIndex);
-            musicIndex = randonSongIndex;
+            musicIndex == randonSongIndex;
             loadSongs(musicIndex);
             playSongs();            
-            break;
-            
-    
-        default:
             break;
     }
 })
