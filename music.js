@@ -12,6 +12,7 @@ songProgress = playerBox.querySelector(".progressBar"),
 repeatButton = playerBox.querySelector("#repeatSong"),
 songsList = playerBox.querySelector(".musicList"),
 moreSongs = playerBox.querySelector("#moreSongs"),
+closeSongList = playerBox.querySelector("#closeList"),
 navigateSong = playerBox.querySelector(".listen");
 
 let musicIndex = 1;
