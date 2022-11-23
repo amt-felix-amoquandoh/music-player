@@ -11,7 +11,7 @@ progressBox = playerBox.querySelector(".songProgress"),
 songProgress = playerBox.querySelector(".progressBar"),
 repeatButton = playerBox.querySelector("#repeatSong"),
 songsList = playerBox.querySelector(".musicList"),
-moreSongs = playerBox.querySelector("#moreSongs"),
+moreSongsBtn = playerBox.querySelector("#moreSongs"),
 closeSongList = playerBox.querySelector("#closeList"),
 navigateSong = playerBox.querySelector(".listen");
 
@@ -126,16 +126,7 @@ function repeatFunc (){
     }
 }
 
-
-navigateSong.addEventListener("click", seekSong);
-nextBtn.addEventListener("click", nextSong);
-previousBtn.addEventListener("click", previousSong);
-song.addEventListener("timeupdate", songTime);
-progressBox.addEventListener("click", progressBar);
-repeatButton.addEventListener("click", repeatFunc);
-
-
-song.addEventListener("ended", () => {
+function listPlayback() {
     let getClassText = repeatButton.classList.value;
     switch (getClassText) {
         case "bi-repeat":
@@ -156,5 +147,17 @@ song.addEventListener("ended", () => {
             playSongs();            
             break;
     }
+}
+
+
+navigateSong.addEventListener("click", seekSong);
+nextBtn.addEventListener("click", nextSong);
+previousBtn.addEventListener("click", previousSong);
+song.addEventListener("timeupdate", songTime);
+progressBox.addEventListener("click", progressBar);
+repeatButton.addEventListener("click", repeatFunc);
+song.addEventListener("ended", listPlayback);
+moreSongsBtn.addEventListener("click", ()=>{
+    songsList.classList.add("showBtn");
 })
 
