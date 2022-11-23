@@ -149,6 +149,10 @@ function listPlayback() {
     }
 }
 
+function showPlayList(){
+    songsList.classList.add("showMusicList");
+}
+
 
 navigateSong.addEventListener("click", seekSong);
 nextBtn.addEventListener("click", nextSong);
@@ -157,7 +161,5 @@ song.addEventListener("timeupdate", songTime);
 progressBox.addEventListener("click", progressBar);
 repeatButton.addEventListener("click", repeatFunc);
 song.addEventListener("ended", listPlayback);
-moreSongsBtn.addEventListener("click", ()=>{
-    songsList.classList.add("showBtn");
-})
+moreSongsBtn.addEventListener("click", showPlayList)
 
