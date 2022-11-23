@@ -181,7 +181,6 @@ ion-icon, .actionButtons i{
     align-items: center;
     border-radius: 50%;
     padding: 8px;
-    box-shadow:  0 0 2px #fff, 8px 8px 8px #ec67d38a, -3px -3px 15px #ec67d3;
  }
  .listen .pause{
    display: none;
