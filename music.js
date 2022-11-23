@@ -101,9 +101,20 @@ navigateSong.addEventListener("click", seekSong);
 nextBtn.addEventListener("click", nextSong);
 previousBtn.addEventListener("click", previousSong);
 song.addEventListener("timeupdate", songTime);
-progressBox.addEventListener("click", progressBar)
+progressBox.addEventListener("click", progressBar);
+
+
+
 repeatButton.addEventListener("click", () => {
-    let getRepeatText = repeatButton.classList;
+    let getRepeatText = repeatButton.classList.value;
     console.log(getRepeatText)
+    // switch (getRepeatText) {
+    //     case value:
+            
+    //         break;
+    
+    //     default:
+    //         break;
+    // }
 })
 
