@@ -131,3 +131,31 @@ song.addEventListener("timeupdate", songTime);
 progressBox.addEventListener("click", progressBar);
 repeatButton.addEventListener("click", repeatFunc);
 
+
+song.addEventListener("ended", () => {
+    let getClassText = repeatButton.classList.value;
+    switch (getClassText) {
+        case "bi-repeat":
+            nextSong();         
+            break;
+            case "bi-repeat-1":
+            song.currentTime = 0;
+            loadSongs(musicIndex);
+            playSongs();           
+            break;
+            case "bi-shuffle":
+            let randonSongIndex = Math.floor((Math.random() * musicFolder.length) + 1);
+            do {
+                randonSongIndex = Math.floor((Math.random() * musicFolder.length) + 1);
+            } while (musicIndex == randonSongIndex);
+            musicIndex = randonSongIndex;
+            loadSongs(musicIndex);
+            playSongs();            
+            break;
+            
+    
+        default:
+            break;
+    }
+})
+
