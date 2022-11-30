@@ -156,10 +156,9 @@ function hidePlayList(){
     moreSongsBtn.click();
 }
 
-const musicUl = playerBox.querySelector("ul");
-let newMusicUl = musicUl
+const musicUl = playerBox.querySelector(".musicUl");
 for (let i = 0; i < musicFolder.length; i++) {    
-    newMusicUl = musicFolder[i];
+    // musicUl = musicFolder[i];
     let musicLi = `<li>
     <div class="row">
       <span>Oyi</span>
